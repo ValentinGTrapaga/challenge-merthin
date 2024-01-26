@@ -9,7 +9,7 @@ export const RadioInput = ({ children, ...props }: RadioInputProps) => {
   return (
     <div className='relative'>
       <input
-        className='text-button appearance-none bg-neutral-800 w-4 h-4 border border-neutral-500 rounded-full checked:bg-primary-600 transition-all peer'
+        className={`text-button appearance-none bg-neutral-800 w-4 h-4 border border-neutral-500 rounded-full checked:bg-primary-600 transition-all peer ${props.className}`}
         {...props}
         type='radio'
       />

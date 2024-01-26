@@ -8,7 +8,7 @@ export const Label = ({ children, ...props }: Label) => {
   return (
     <label
       {...props}
-      className='text-button text-white flex gap-2 items-center'>
+      className={`text-button text-white flex gap-2 items-center ${props.className}`}>
       {children}
     </label>
   )

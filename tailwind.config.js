@@ -24,6 +24,9 @@ export default {
         'filter-title': ['18px', '22.5px'],
       }
     },
+    boxShadow: {
+      'filterBox': '0 4 54 10 rgba(0, 0, 0, 0.35)'
+    }
   },
   plugins: [],
 }
