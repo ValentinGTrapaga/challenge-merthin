@@ -30,9 +30,9 @@ export const Filter = () => {
       <span className='flex gap-4'>
         <Button onClick={handleOpen}>
           <FilterSVG className='w-4 group-hover:fill-white fill-primary-500 transition-colors' />
-          Filter
+          <p className='hidden sm:block'>Filter</p>
         </Button>
-        {filters.severity && (
+        {activeFilters.severity.length > 0 && (
           <Button
             variant='filter'
             onClick={resetSeverity}>
@@ -40,7 +40,7 @@ export const Filter = () => {
             <p>Severity: {activeFilters.severity.join(', ')}</p>
           </Button>
         )}
-        {filters.time && (
+        {activeFilters.time && (
           <Button
             variant='filter'
             onClick={resetTime}>
