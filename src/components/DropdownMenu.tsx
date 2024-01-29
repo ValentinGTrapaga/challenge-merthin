@@ -20,7 +20,7 @@ export const DropdownMenu = ({
   return (
     <div
       {...props}
-      className={`bg-neutral-900 py-[15px] px-[20px] rounded-md w-[340px] transition-all duration-300 ease-in-out overflow-y-hidden ${
+      className={`bg-neutral-900 py-[15px] px-[20px] rounded-md w-full sm:w-[340px] transition-all duration-300 ease-in-out overflow-y-hidden ${
         isOpen ? 'max-h-[1000px]' : 'max-h-[54px]'
       } ${props.className}`}>
       <button
