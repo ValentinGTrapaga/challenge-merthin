@@ -15,7 +15,7 @@ export const Button = ({
     filter:
       'bg-neutral-700 text-button text-white rounded-md p-3 hidden sm:flex items-center gap-2 hover:bg-neutral-800 transition-colors ',
     ghost:
-      'p-3 hidden sm:flex items-center gap-2 hover:bg-neutral-700 text-button text-primary-500 rounded-md transition-colors duration-200 group'
+      'p-3 flex items-center gap-2 hover:bg-neutral-700 text-button text-primary-500 rounded-md transition-colors duration-200 group'
   }
 
   return (
